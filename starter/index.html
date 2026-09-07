@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Регистрация на Frontend Open Day 2026"
+    >
+
+    <title>Регистрация — Frontend Open Day 2026</title>
+
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+
+  <body class="page">
+    <header class="site-header page__header">
+      <div class="layout-container site-header__inner">
+        <a class="brand site-header__brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand__text">Frontend Open Day</span>
+        </a>
+
+        <a class="text-link site-header__back-link" href="#registration-form">
+          К форме
+        </a>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <div class="registration layout-container page__section">
+        <section class="registration-info registration__intro">
+          <span class="badge badge--light registration-info__badge">
+            Регистрация открыта
+          </span>
+
+          <h1 class="registration-info__title">Ваше место</h1>
+
+          <p class="registration-info__text">
+            Соберите форму регистрации и посмотрите, что браузер умеет делать
+            с ней без JavaScript.
+          </p>
+
+          <ul class="benefit-list registration-info__benefits">
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">1</span>
+              <span>Участие бесплатное</span>
+            </li>
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">2</span>
+              <span>19 сентября 2026 года, 10:30</span>
+            </li>
+            <li class="benefit-list__item">
+              <span class="benefit-list__marker" aria-hidden="true">3</span>
+              <span>Очный и дистанционный форматы</span>
+            </li>
+          </ul>
+
+          <img
+            class="registration-info__visual"
+            src="assets/registration-form.svg"
+            alt="Схематичное изображение формы регистрации"
+            width="960"
+            height="720"
+          >
+        </section>
+
+        <section class="registration-card registration__card">
+          <header class="form-heading registration-card__heading">
+            <p class="form-heading__eyebrow">Форма участника</p>
+            <h2 class="form-heading__title">Расскажите о себе</h2>
+            <p class="form-heading__text">
+              Сначала добейтесь обычной отправки данных. Затем улучшите эту же
+              форму: добавьте ограничения, группы выбора и нативную проверку.
+            </p>
+          </header>
+
+          <form
+            class="registration-form registration-card__form"
+            id="registration-form"
+            action="result.html"
+            method="get"
+          >
+            <p class="form-note registration-form__notice">
+              <span class="form-note__strong">Начните с готового примера:</span>
+              первое поле уже размечено. CSS писать не нужно.
+            </p>
+
+            <div class="registration-form__grid">
+              <div class="form-field registration-form__field">
+                <label class="form-field__label" for="full-name">
+                  Имя и фамилия
+                </label>
+                <input
+                  class="form-field__control"
+                  id="full-name"
+                  name="full_name"
+                  type="text"
+                  placeholder="Например, Анна Смирнова"
+                >
+                <p class="form-field__hint">
+                  Это готовый пример. Остальные поля создайте по той же схеме.
+                </p>
+              </div>
+
+              <!-- ЭТАП 1. Добавьте email: label + input type="email", name="email". -->
+
+              <!-- ЭТАП 1. Добавьте телефон: label + input type="tel", name="phone". -->
+
+              <!-- ЭТАП 1. Добавьте select name="study_year" с вариантами курса. -->
+
+              <!--
+                ЭТАП 2 выполняется после первой успешной отправки формы.
+
+                Улучшите созданные выше поля:
+                - имя: required, autocomplete="name", minlength="2", maxlength="80";
+                - email: required, autocomplete="email";
+                - телефон: autocomplete="tel";
+                - select: required; пустой option сделайте selected и disabled.
+              -->
+
+              <!-- ЭТАП 2. Добавьте readonly-поле "Мероприятие" и disabled-поле "Стоимость". -->
+
+              <!-- ЭТАП 3. Добавьте fieldset + legend с radio "Очно" и "Онлайн". -->
+
+              <!-- ЭТАП 3. Добавьте fieldset + legend с тремя checkbox интересующих тем. -->
+
+              <!-- ЭТАП 3. Добавьте textarea name="question" с maxlength="300". -->
+
+              <!-- ЭТАП 1 + ЭТАП 3. Добавьте checkbox согласия; на финальном этапе сделайте его required. -->
+            </div>
+
+            <!-- ЭТАП 1. Добавьте кнопку type="submit" и проверьте GET-параметры в URL. -->
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page__footer">
+      <div class="layout-container site-footer__inner">
+        <p class="site-footer__text">Frontend Open Day 2026 · Учебный проект</p>
+        <a class="site-footer__link" href="#registration-form">Вернуться к форме</a>
+      </div>
+    </footer>
+  </body>
+</html>
